@@ -1,0 +1,108 @@
+@import './default.scss';
+@import './header.scss';
+@import './footer.scss';
+
+.seats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+
+    .seats_detail {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        padding: 0 0 0 50px;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        color: $white;
+        font-family: 'Montserrat', sans-serif;
+
+        .detail_title {
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        .detail_info {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .detail_buttons {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            margin-top: 20px;
+
+            .buttons_button {
+                border: none;
+                outline: none;
+                padding: 10px 30px;
+                background-color: transparent;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 26px;
+                color: $white;
+                cursor: pointer;
+                border: 5px solid $blue;
+                transition-property: background-color;
+                transition-duration: 0.3s;
+                
+                &:hover {
+                    background-color: $blue;
+                }
+                &.buttons_button-reserve{
+                    margin-left: 20px;
+                }
+                &.buttons_button-buy{
+                    background-color: $blue;
+                }
+            }
+        }
+    }
+
+    .seats_seats {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .break {
+            min-height: 1px;
+            flex-basis: 100%;
+        }
+
+        .seats_seat {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            border: 2px solid $blue;
+            border-radius: 5px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            transition-duration: 0.3s;
+            transition-property: background-color;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $blue;
+            }
+
+            &.seats_seat-taken {
+                border: none;
+                background-color: $red;
+                cursor: no-drop;
+            }
+
+            &.seats_seat-chosen {
+                background-color: $blue;
+            }
+        }
+    }
+}

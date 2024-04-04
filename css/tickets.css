@@ -245,45 +245,42 @@ footer p {
   color: #FEFCFB;
 }
 
-.carousel {
+.seats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   width: 100%;
   height: 100vh;
-  padding-top: 80px;
-  display: flex;
-  flex-direction: row;
 }
-.carousel .carousel_content {
-  width: 50%;
+.seats .seats_detail {
+  width: 30%;
   height: 100%;
   display: flex;
-  align-items: center;
+  padding: 0 0 0 50px;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  color: #FEFCFB;
+  font-family: "Montserrat", sans-serif;
 }
-.carousel .carousel_content .content_label {
+.seats .seats_detail .detail_title {
+  font-size: 26px;
+  font-weight: 600;
+}
+.seats .seats_detail .detail_info {
+  font-size: 32px;
+  font-weight: 700;
+}
+.seats .seats_detail .detail_buttons {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-top: 20px;
 }
-.carousel .carousel_content .content_label img {
-  height: 100px;
-  width: auto;
-  opacity: 1;
-  transition-property: opacity;
-  transition-duration: 1s;
-}
-.carousel .carousel_content .content_description {
-  color: #FEFCFB;
-  width: 70%;
-  margin-top: 25px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  font-size: 18px;
-  line-height: 2rem;
-  color: #FEFCFB;
-  cursor: default;
-}
-.carousel .carousel_content .content_buy {
+.seats .seats_detail .detail_buttons .buttons_button {
   border: none;
   outline: none;
   padding: 10px 30px;
@@ -294,68 +291,49 @@ footer p {
   color: #FEFCFB;
   cursor: pointer;
   border: 5px solid #067BC2;
-  margin-top: 100px;
   transition-property: background-color;
   transition-duration: 0.3s;
 }
-.carousel .carousel_content .content_buy:hover {
+.seats .seats_detail .detail_buttons .buttons_button:hover {
   background-color: #067BC2;
 }
-.carousel .carousel_movie {
+.seats .seats_detail .detail_buttons .buttons_button.buttons_button-reserve {
+  margin-left: 20px;
+}
+.seats .seats_detail .detail_buttons .buttons_button.buttons_button-buy {
+  background-color: #067BC2;
+}
+.seats .seats_seats {
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  height: 100%;
-  position: relative;
+  flex-wrap: wrap;
 }
-.carousel .carousel_movie .movie_content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.seats .seats_seats .break {
+  min-height: 1px;
+  flex-basis: 100%;
 }
-.carousel .carousel_movie .movie_content img {
-  height: 90%;
-  width: auto;
-  opacity: 1;
-  transition-property: opacity;
-  transition-duration: 1s;
+.seats .seats_seats .seats_seat {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border: 2px solid #067BC2;
+  border-radius: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+  cursor: pointer;
 }
-
-.whyus {
-  text-align: center;
-  width: 100%;
-  height: 50vh;
-  background-image: url("../assets/images/whyus.jpg");
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.seats .seats_seats .seats_seat:hover {
+  background-color: #067BC2;
 }
-.whyus .whyus_backdrop {
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(5px);
-  padding: 0 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.seats .seats_seats .seats_seat.seats_seat-taken {
+  border: none;
+  background-color: #A64249;
+  cursor: no-drop;
 }
-.whyus .whyus_title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 35px;
-  color: #FEFCFB;
-  filter: none;
-  margin-bottom: 50px;
-}
-.whyus .whyus_description {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-  color: #FEFCFB;
-  line-height: 3rem;
-}/*# sourceMappingURL=home.css.map */
+.seats .seats_seats .seats_seat.seats_seat-chosen {
+  background-color: #067BC2;
+}/*# sourceMappingURL=tickets.css.map */
