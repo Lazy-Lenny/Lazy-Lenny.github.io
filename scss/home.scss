@@ -8,6 +8,9 @@
     display: flex;
     flex-direction: row;
     .carousel_content{
+        @media screen and (max-width: 920px) {
+            width: 100%;
+        }
         width: 50%;
         height: 100%;
         display: flex;
@@ -57,6 +60,9 @@
         }
     }
     .carousel_movie{
+        @media screen and (max-width: 920px) {
+            display: none;
+        }
         display: flex;
         align-items: center;
         justify-content: center;
@@ -81,6 +87,9 @@
 }
 
 .whyus{
+    @media screen and (max-width: 1024px) {
+        height: 100vh;
+    }
     text-align: center;
     width: 100%;
     height: 50vh;
@@ -90,6 +99,9 @@
     align-items: center;
     justify-content: center;
     .whyus_backdrop{
+        @media screen and (max-width: 1024px) {
+            padding: 0 30px;
+        }
         width: 100%;
         height: 100%;
         backdrop-filter: blur(5px);

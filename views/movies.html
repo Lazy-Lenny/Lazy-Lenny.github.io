@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy tickets</title>
-    <link rel="stylesheet" href="../css/tickets.css">
+    <link rel="stylesheet" href="../css/movies.css">
 </head>
 <body>
     <header class="header">
@@ -12,128 +12,135 @@
             <img src="../assets/images/logo.png" alt="logo" class="logo_img">
         </div>
         <nav class="header_nav">
-            <div class="nav_option">Home</div>
+            <div class="nav_option" id="home">Home</div>
             <div class="nav_option">About</div>
-            <div class="nav_option">Movies</div>
+            <div class="nav_option" id="movies">Movies</div>
             <div class="nav_option">Contacts</div>
         </nav>
-        <div class="header_user">
+        <div class="header_user" id="logout">
             <div class="user_pfp">
                 <img src="../assets/images/user_pfp.png" alt="pfp" class="pfp_image">
             </div>
         </div>
     </header>
     <main>
-        <section class="seats">
-            <div class="seats_detail">
-                <p class="detail_title">Chosen seat:</p>
-                <p class="detail_info">Row: 8, Seat: 5</p>
-                <div class="detail_buttons">
-                    <button class="buttons_button buttons_button-buy">
-                        Buy
-                    </button>
-                    <button class="buttons_button buttons_button-reserve">
-                        Reserve
-                    </button>
+        <section class="movies">
+            <p class="movies__title">List of movies</p>
+            <div class="movies__container">
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
                 </div>
-            </div>
-            <div class="seats_seats">
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>
-                <div class="break"></div>     
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>
-                <div class="break"></div>
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>
-                <div class="break"></div>
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>
-                <div class="break"></div>
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>  
-                <div class="break"></div>      
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>  
-                <div class="break"></div>      
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>  
-                <div class="break"></div>           
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-chosen"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>  
-                <div class="break"></div>           
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>                
-                <div class="seats_seat seats_seat-taken"></div>  
-                <div class="break"></div>           
-            </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                <div class="movies__movie">
+                    <div class="movie__logo">
+                        <img src="../assets/images/movies/dm.jpg" alt="movie" class="movie__logo">
+                    </div>
+                    <p class="movie__title">Despicable me 2</p>
+                    <button class="movie__buytickets buy">Buy tickets</button>
+                </div>
+                
+            </div> 
         </section>
     </main>
     <footer>
@@ -153,5 +160,26 @@
         </div>
     </footer>
 </body>
-<script src="../js/home.js"></script>
+<script>
+    Array.from(document.getElementsByClassName('movie__buytickets buy')).forEach((el) => {
+        el.onclick = () => {
+            var url = "../views/tickets.html";
+            window.location.href = url;
+        }
+    })
+    document.getElementById('home').onclick = () => {
+        var url = "./home.html";
+    window.location.href = url;
+    }
+    
+    document.getElementById('movies').onclick = () => {
+        var url = "./movies.html";
+    window.location.href = url;
+    }
+
+    document.getElementById('logout').onclick = () => {
+        var url = "./login.html";
+    window.location.href = url;
+    }
+</script>
 </html>

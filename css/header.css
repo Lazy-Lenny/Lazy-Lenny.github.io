@@ -67,6 +67,11 @@ header .header_nav {
   justify-content: center;
   flex-direction: row;
 }
+@media screen and (max-width: 640px) {
+  header .header_nav {
+    display: none;
+  }
+}
 header .header_nav .nav_option {
   display: flex;
   align-items: center;
@@ -82,6 +87,11 @@ header .header_nav .nav_option {
   overflow: hidden;
   transition-duration: 0.3s;
   transition-property: background-color;
+}
+@media screen and (max-width: 720px) {
+  header .header_nav .nav_option {
+    padding: 0 10px;
+  }
 }
 header .header_nav .nav_option:hover {
   background-color: #02223C;

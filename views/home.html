@@ -12,12 +12,12 @@
             <img src="../assets/images/logo.png" alt="logo" class="logo_img">
         </div>
         <nav class="header_nav">
-            <div class="nav_option">Home</div>
+            <div class="nav_option" id="home">Home</div>
             <div class="nav_option">About</div>
-            <div class="nav_option">Movies</div>
+            <div class="nav_option" id="movies">Movies</div>
             <div class="nav_option">Contacts</div>
         </nav>
-        <div class="header_user">
+        <div class="header_user" id="logout">
             <div class="user_pfp">
                 <img src="../assets/images/user_pfp.png" alt="pfp" class="pfp_image">
             </div>
@@ -30,7 +30,7 @@
                 <img src="../assets/images/labels/deadpool.png" alt="label" id="currLabel">
             </div>  
             <p class="content_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus quasi placeat veniam assumenda molestias, nam deleniti eius quaerat, voluptatum, perspiciatis inventore velit fugit nobis eum ex corrupti aut omnis. Accusantium!</p> 
-            <button class="content_buy">Buy tickets</button>
+            <button class="content_buy" id="buy">Buy tickets</button>
         </div>
         <div class="carousel_movie">
             <div class="movie_content"><img src="../assets/images/movies/deadpool.jpg" alt="movie" id="currMovie"></div>
@@ -61,4 +61,22 @@
     </footer>
 </body>
 <script src="../js/home.js"></script>
+<script>
+    document.getElementById('home').onclick = () => {
+        var url = "./home.html";
+    window.location.href = url;
+    }
+    document.getElementById('movies').onclick = () => {
+        var url = "./movies.html";
+    window.location.href = url;
+    }
+    document.getElementById('logout').onclick = () => {
+        var url = "./login.html";
+    window.location.href = url;
+    }
+    document.getElementById('buy').onclick = () => {
+        var url = "./tickets.html";
+    window.location.href = url;
+    }
+</script>
 </html>

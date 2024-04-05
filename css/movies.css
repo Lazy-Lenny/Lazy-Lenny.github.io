@@ -255,124 +255,62 @@ footer p {
   color: #FEFCFB;
 }
 
-.seats {
+.movies {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  width: 100%;
-  height: 100vh;
-}
-@media screen and (max-width: 980px) {
-  .seats {
-    padding-top: 70px;
-    flex-direction: column;
-  }
-}
-.seats .seats_detail {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  padding: 0 0 0 50px;
-  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  color: #FEFCFB;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
 }
-@media screen and (max-width: 980px) {
-  .seats .seats_detail {
-    width: 100%;
-    padding: 0;
-    align-items: center;
-  }
-}
-.seats .seats_detail .detail_title {
-  font-size: 26px;
+.movies .movies__title {
+  color: #FEFCFB;
+  font-size: 36px;
   font-weight: 600;
+  margin-top: 120px;
 }
-.seats .seats_detail .detail_info {
-  font-size: 32px;
-  font-weight: 700;
-}
-.seats .seats_detail .detail_buttons {
-  width: 100%;
+.movies .movies__container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
-  margin-top: 20px;
+  flex-wrap: wrap;
 }
-@media screen and (max-width: 980px) {
-  .seats .seats_detail .detail_buttons {
-    width: unset;
-  }
+.movies .movies__container .movies__movie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 22%;
+  min-width: 250px;
+  color: #FEFCFB;
+  padding: 40px;
 }
-.seats .seats_detail .detail_buttons .buttons_button {
+.movies .movies__container .movies__movie div.movie__logo {
+  width: 100%;
+}
+.movies .movies__container .movies__movie div.movie__logo img {
+  width: 100%;
+  height: auto;
+}
+.movies .movies__container .movies__movie .movie__title {
+  margin-top: 10px;
+}
+.movies .movies__container .movies__movie .movie__buytickets {
+  margin-top: 10px;
   border: none;
   outline: none;
   padding: 10px 30px;
   background-color: transparent;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 14px;
   color: #FEFCFB;
   cursor: pointer;
   border: 5px solid #067BC2;
   transition-property: background-color;
   transition-duration: 0.3s;
 }
-.seats .seats_detail .detail_buttons .buttons_button:hover {
+.movies .movies__container .movies__movie .movie__buytickets:hover {
   background-color: #067BC2;
-}
-.seats .seats_detail .detail_buttons .buttons_button.buttons_button-reserve {
-  margin-left: 20px;
-}
-.seats .seats_detail .detail_buttons .buttons_button.buttons_button-buy {
-  background-color: #067BC2;
-}
-.seats .seats_seats {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.seats .seats_seats .break {
-  min-height: 1px;
-  flex-basis: 100%;
-}
-.seats .seats_seats .seats_seat {
-  width: 30px;
-  height: 30px;
-  margin: 5px;
-  border: 2px solid #067BC2;
-  border-radius: 5px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  transition-duration: 0.3s;
-  transition-property: background-color;
-  cursor: pointer;
-}
-@media screen and (max-width: 450px) {
-  .seats .seats_seats .seats_seat {
-    width: 25px;
-    height: 25px;
-    margin: 2.5px;
-  }
-}
-.seats .seats_seats .seats_seat:hover {
-  background-color: #067BC2;
-}
-.seats .seats_seats .seats_seat.seats_seat-taken {
-  border: none;
-  background-color: #A64249;
-  cursor: no-drop;
-}
-.seats .seats_seats .seats_seat.seats_seat-reserved {
-  border: none;
-  background-color: #D17B0F;
-  cursor: no-drop;
-}
-.seats .seats_seats .seats_seat.seats_seat-chosen {
-  background-color: #067BC2;
-}/*# sourceMappingURL=tickets.css.map */
+}/*# sourceMappingURL=movies.css.map */

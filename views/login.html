@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-form">
+        <form class="login-form__form" method="get">
+          <div class="login-form__field">
+            <label for="username" class="login-form__label">Username:</label>
+            <input type="text" id="username" name="username" class="login-form__input" required>
+          </div>
+          <div class="login-form__field">
+            <label for="password" class="login-form__label">Password:</label>
+            <input type="password" id="password" name="password" class="login-form__input" required>
+          </div>
+          <button type="submit" class="login-form__button" id="login">Login</button>
+        </form>
+      </div>
+</body>
+<script>
+    document.getElementById('login').onclick = () => {
+        var url = "./home.html";
+    window.location.href = url;
+    }
+</script>
+</html>

@@ -1,0 +1,53 @@
+@import './default.scss';
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+    .login-form__form {
+        padding: 20px;
+        background-color: $black_light;
+
+        .login-form__field {
+            margin-bottom: 15px;
+
+            .login-form__label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .login-form__input {
+                width: 100%;
+                padding: 8px;
+                background-color: $black;
+                outline: none;
+                border: none;
+                color: $white;
+            }
+        }
+
+        .login-form__button {
+            border: none;
+            outline: none;
+            padding: 7px 30px;
+            width: 100%;
+            background-color: transparent;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: $white;
+            cursor: pointer;
+            border: 5px solid $blue;
+            transition-property: background-color;
+            transition-duration: 0.3s;
+
+            &:hover {
+                background-color: $blue;
+            }
+        }
+    }
+}

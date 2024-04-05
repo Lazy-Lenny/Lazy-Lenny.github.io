@@ -1,0 +1,66 @@
+@import './default.scss';
+@import './header.scss';
+@import './footer.scss';
+
+.movies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    .movies__title{
+        color: $white;
+        font-size: 36px;
+        font-weight: 600;
+        margin-top: 120px;
+    }
+    .movies__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .movies__movie{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 22%;
+            min-width: 250px;
+            color: $white;
+            padding: 40px;
+            div.movie__logo{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .movie__title{
+                margin-top: 10px;
+            }
+
+            .movie__buytickets{
+                margin-top: 10px;
+                border: none;
+                outline: none;
+                padding: 10px 30px;
+                background-color: transparent;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                color: $white;
+                cursor: pointer;
+                border: 5px solid $blue;
+                transition-property: background-color;
+                transition-duration: 0.3s;
+                
+                &:hover {
+                    background-color: $blue;
+                }
+            }
+        }
+    }
+}
